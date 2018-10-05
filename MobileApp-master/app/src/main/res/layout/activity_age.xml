@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_age"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.park.myapplication123.AgeActivity">
+
+    <TextView
+        android:text="태어난 년도를 입력하세요."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/yearText" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="숫자를 입력하세요."
+        android:ems="10"
+        android:layout_below="@+id/yearText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/yeareditText" />
+
+    <Button
+        android:text="나이계산"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yeareditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/agecalculbutton" />
+
+    <TextView
+        android:text="나이를 입력하세요."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/agecalculbutton"
+        android:layout_alignRight="@+id/agecalculbutton"
+        android:layout_alignEnd="@+id/agecalculbutton"
+        android:layout_marginTop="52dp"
+        android:id="@+id/agetextView" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="숫자를 입력하세요."
+        android:ems="10"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/agetextView"
+        android:layout_alignEnd="@+id/agetextView"
+        android:id="@+id/ageeditText" />
+
+    <Button
+        android:text="태어난 해 계산"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ageeditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/birthbutton" />
+</LinearLayout>

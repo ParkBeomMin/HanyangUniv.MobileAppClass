@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.park.myapplication.MainActivity">
+
+    <Button
+        android:onClick="MyOnClick"
+        android:id="@+id/btn1"
+        android:text="내부 메모리에 읽기"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:onClick="MyOnClick"
+        android:id="@+id/btn2"
+        android:text="내부 메모리에 쓰기"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:onClick="MyOnClick"
+        android:id="@+id/btn3"
+        android:text="RAW폴더에서 파일 읽기"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:onClick="MyOnClick"
+        android:id="@+id/btn4"
+        android:text="외부 메모리에 읽기"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:onClick="MyOnClick"
+        android:id="@+id/btn5"
+        android:text="외부 메모리에 쓰기"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:onClick="MyOnClick"
+        android:id="@+id/btn6"
+        android:text="디렉터리 생성"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:onClick="MyOnClick"
+        android:id="@+id/btn7"
+        android:text="디렉터리 파일목록"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

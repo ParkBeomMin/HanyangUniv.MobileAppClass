@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_class_hour"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.park.togetherclass.ClassHourActivity">
+
+    <HorizontalScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarAlwaysDrawHorizontalTrack="true">
+
+            <Button
+                android:id="@+id/GClassbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:onClick="MyOnClick"
+                android:text="수업시간" />
+
+            <Button
+                android:id="@+id/GFreebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:onClick="MyOnClick"
+                android:text="자유게시판" />
+
+            <Button
+                android:id="@+id/GNoticebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:onClick="MyOnClick"
+                android:text="과목 공지" />
+
+            <Button
+                android:id="@+id/GMeetbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:onClick="MyOnClick"
+                android:text="교수현황" />
+
+            <Button
+                android:id="@+id/GPotalbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:onClick="MyOnClick"
+                android:text="포탈" />
+
+            <Button
+                android:id="@+id/GHomebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:onClick="MyOnClick"
+                android:text="스케쥴" />
+        </GridLayout>
+    </HorizontalScrollView>
+
+    <ListView
+        android:id="@+id/questionList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:divider="#121111"
+        android:dividerHeight="1dp"></ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/questionEt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/addQuestionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MyOnClick"
+            android:text="전송"
+            android:textColor="@color/Black"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/recodeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/Button"
+            android:onClick="MyOnClick"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="녹음하기"
+            android:textColor="@color/White"
+            android:textSize="20dp" />
+<View
+    android:layout_width="1dp"
+    android:layout_height="1dp"/>
+        <Button
+            android:id="@+id/understandingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="MyOnClick"
+            android:background="@color/Button"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="이해가 안되요"
+            android:textColor="@color/White"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

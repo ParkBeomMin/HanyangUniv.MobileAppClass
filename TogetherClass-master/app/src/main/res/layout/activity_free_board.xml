@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_free_board"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.park.togetherclass.FreeBoardActivity">
+
+    <HorizontalScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarAlwaysDrawHorizontalTrack="true">
+            <ImageView />
+
+            <Button
+                android:id="@+id/GClassbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:onClick="MyOnClick"
+                android:text="수업시간" />
+
+            <Button
+                android:id="@+id/GFreebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:onClick="MyOnClick"
+                android:text="자유게시판" />
+
+            <Button
+                android:id="@+id/GNoticebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:onClick="MyOnClick"
+                android:text="과목 공지" />
+
+            <Button
+                android:id="@+id/GMeetbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:onClick="MyOnClick"
+                android:text="교수현황" />
+
+            <Button
+                android:id="@+id/GPotalbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:onClick="MyOnClick"
+                android:text="포탈" />
+
+            <Button
+                android:id="@+id/GHomebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:onClick="MyOnClick"
+                android:text="스케쥴" />
+        </GridLayout>
+    </HorizontalScrollView>
+
+
+    <Spinner
+        android:id="@+id/FreeSpin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Spinner>
+
+    <ListView
+        android:id="@+id/freelist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:divider="#c1c1c1"
+        android:dividerHeight="1dp"></ListView>
+
+    <Button
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:id="@+id/FreeRegiBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="MyOnClick"
+        android:background="@color/Button"
+        android:text="글쓰기"
+        android:textSize="20dp"
+        android:textColor="@color/White"/>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.park.myapplication123">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        // 아이콘에서 앱 아이콘을 바꿀 수 있다 / 라벨에서 앱 이름을 바꿀 수 있다.
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            // 가장처음에 뜨는 액티비티를 설정해준다.
+        </activity>
+        <activity android:name=".AppleActivity" />
+        <activity android:name=".CalculActivity" />
+        <activity android:name=".AgeActivity" />
+        <activity android:name=".TemperActivity" />
+        <activity android:name=".ResActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="다음으로"
+        android:id="@+id/next"
+        app:showAsAction="always" />
+    <item android:title="배경색변경" >
+        <menu >
+            <item android:title="빨간색"
+                android:id="@+id/mnuRed"/>
+            <item android:title="파란색"
+                android:id="@+id/mnuBlue"/>
+            <item android:title="노란색"
+                android:id="@+id/mnuYellow"/>
+        </menu>
+    </item>
+    <item android:title="그림30도 회전"
+        android:id="@+id/mnuSpin" />
+    <group android:checkableBehavior="all">
+        <item android:title="제목 보이기"
+            android:id="@+id/mnuShow"/>
+        <item android:title="그림 2배 확대"
+            android:id="@+id/mnuDouble"/>
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:title="치킨선택"
+            android:id="@+id/mnuChiken"
+            android:checked="true"/>
+        <item android:title="스파게티"
+            android:id="@+id/mnuSpaghetti"/>
+    </group>
+</menu>

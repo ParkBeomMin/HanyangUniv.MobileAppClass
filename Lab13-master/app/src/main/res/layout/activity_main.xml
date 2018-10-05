@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.park.myapplication.MainActivity">
+
+
+    <LinearLayout
+        android:background="#f1c0c0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="메뉴 이미지 변경 간격(초)" />
+
+        <EditText
+            android:inputType="number"
+            android:text="1"
+            android:id="@+id/secondEt"
+            android:padding="5dp"
+            android:background="#ffffff"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:onClick="onClick"
+            android:id="@+id/initBtn"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="처음으로" />
+    </LinearLayout>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="오늘 뭐 먹지?"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"/>
+    <ImageButton
+        android:background="#ffffff"
+        android:onClick="onClick"
+        android:id="@+id/image"
+        android:layout_gravity="center"
+        android:src="@drawable/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/timer"
+        android:visibility="gone"
+        android:textSize="20dp"
+        android:textColor="#79a1d6"
+        android:layout_marginTop="20dp"
+        android:text="경과시간 : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+</LinearLayout>

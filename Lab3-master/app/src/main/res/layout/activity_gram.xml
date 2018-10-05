@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_gram"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#0b0b0b">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:text="노르말농도(eq/L)"
+            android:textSize="12pt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="노르말농도를 입력해주세요."
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="#8cc9f7"
+            android:id="@+id/Normal" />
+
+        <TextView
+            android:text="분자량(g/mol)"
+            android:textSize="12pt"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="분자량을 입력해주세요."
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="#8cc9f7"
+            android:id="@+id/molWeight" />
+
+        <TextView
+            android:text="당량수(eq/mol)"
+            android:textSize="12pt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+             />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="당량수를 입력해주세요."
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="#8cc9f7"
+            android:id="@+id/eqNumber" />
+
+        <Button
+            android:onClick="onClickCalCul"
+            android:text="질량 구하기"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnGram" />
+
+        <TextView
+            android:text="값을 입력해주세요."
+            android:textSize="14pt"
+            android:textColor="#de5b5b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/GramResult" />
+    </LinearLayout>
+</LinearLayout>
